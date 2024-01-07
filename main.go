@@ -88,7 +88,7 @@ func compareFiles(prismOne PrismBaseFile, prismTwo PrismBaseFile) {
 		found, comparitorIssue, multipleInstances := findIssue(originalIssue, shortHandTwo)
 
 		if !found {
-			fmt.Println("Issue note present in latest scan: " + originalIssue.Name)
+			fmt.Println("Issue not present in latest scan: " + originalIssue.Name)
 			continue
 		}
 
